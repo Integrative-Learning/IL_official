@@ -1,0 +1,378 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --style: 'Stick No Bills', sans-serif;
+    --style-bold: 600;
+}
+body{
+    background-color: aliceblue;
+    text-align: center;
+}
+#preloader{
+    background:rgb(0, 0, 0) url(../images/loader.gif) no-repeat center center;
+    background-size:40%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index:100;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    box-shadow: 0.5rem 0 0.5rem rgb(19, 19, 19);
+}
+.nav-menu li{
+    padding: 5px;
+    /* list-style: none; */
+    display: inline;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 300;
+    flex-wrap: wrap;
+}
+.nav-menu{
+    /* display: flex; */
+}
+.nav-container{
+   display:flex;
+   justify-content: space-between;
+   padding: 1rem;
+   background-color: grey;
+   position:fixed;
+   width:100%;
+   align-items: center;
+   box-shadow: 0.5rem 0 0.5rem rgb(180, 174, 174);
+}
+/* .nav-logo{
+  
+} */
+.brand{
+    display: flex;
+    /* justify-content:flex-start; */
+}
+.fas.fa-bars{
+    size:2rem;
+}
+#nav-img{
+    background-image: url(../images/favicon.jpg);
+    background-color: inherit;
+    border-radius:100%;
+    width: 2.3rem;
+}
+#nav-logo-text{
+   position: relative;
+   justify-content: center;
+   padding: 0.3rem 0 0 0.3rem;
+   font-size:130%;
+   font-family: 'Stick No Bills', sans-serif;
+   font-weight: 600;
+}
+@media (min-width:790px){
+    .nav-menu-img{
+        display:none;
+        }
+}
+@media (max-width:790px){
+.nav-menu-img{
+display:flex;
+}
+.nav-menu-content{
+    display: none;
+   flex-direction:column;
+   background-color:#fff;
+   width:100%;
+   border-radius:1rem;
+   text-align:center;
+   box-shadow: 0 10px 25px rgba(160, 156, 156, 0.87);
+   padding: auto;
+   transition: 1s;
+}
+.nav-menu-content.active{
+    padding-top: 1rem;
+    display:block;
+    position: fixed;
+    top:4.5rem;
+    left:0;
+    box-shadow: 1.5rem 1.5rem 1.5rem rgba(112, 112, 112, 0.829);
+}
+.nav-menu-content li{
+    display: block;
+}
+.handle-text{
+    display: none;
+}
+.footer li{
+    display: flex;
+    list-style: none;
+}
+.foot .social-handle{
+    flex-direction:row;
+}
+.social-handle ul{
+    display: inline-flex;
+    margin: 0.5rem 1rem;
+}
+}
+.nav-menu-content{
+   padding: auto;
+   font-family: poppins;
+   position: relative;
+   /* right:1.5rem; */
+}
+li:hover , li:focus{
+    color: rgb(238, 238, 85);
+    border-bottom: 2px rgb(255, 255, 23);
+}
+.nav-menu-content.active li:hover{
+    background-color: rgba(229, 233, 168, 0.623);
+}
+.search-tab{
+    margin: auto;
+    display: none;
+}
+.search-tab.active{
+    display: inline;
+    /* display: block; */
+    background-color: rgb(238, 238, 238);
+    margin: 0.5rem 0.8rem;
+}
+#PYQ-li{
+
+}
+.dropdown1{
+display: none;
+flex-direction: column;
+position:absolute;
+top:2rem;
+left:0;
+background:white;
+color: black;
+line-height: 1rem;
+}
+.dropdown1.PYQ{
+    display: none;
+    flex-direction: column;
+    position:absolute;
+    top:2rem;
+    left:0;
+    background:rgba(128, 128, 128, 0.842);
+    color: white;
+    line-height: 1rem;
+}
+.dropdown2{
+display:none;
+}
+#IL-li{
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(238, 238, 85);
+}
+#contact{
+
+}
+#drop-search{
+    position:relative;
+    width:4rem;
+    height:2rem;
+    background-color: rgba(160, 156, 156, 0.87);
+}
+.intro{
+padding:6rem 2rem 2rem;
+background-color: rgb(255, 255, 255);
+/* text-decoration: none; */
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+#intro-head-text{
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+}
+.intro-text{
+ display:block;
+}
+#intro-content-text{
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+/* .intro-img{
+display: flex;
+align-items: center;
+} */
+#img1{
+    /* display: flex; */
+    width:40%;
+    max-width: fit-content;
+    min-width:190px;
+}
+.about{
+padding: 1rem 1rem 2rem;
+background-color: rgb(142, 142, 143)
+}
+.about-container{
+    text-align: center;
+/* box-shadow: 1rem 1rem 1rem 1rem rgb(180, 174, 174) ; */
+border: 0.5rem rgb(180, 174, 174);
+}
+#about-head{
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+}
+.team{
+background-color: white;
+padding: 2rem;
+/* box-shadow: 0.5rem 0 0.5rem rgb(180, 174, 174); */
+}
+.team-container{
+    padding: 1rem 0;
+}
+#team-head{
+    font-family: var(--style);
+    font-weight: var(--style-bold);
+    font-size: 4rem;
+}
+.team-founder , .team-member{
+    margin:1rem;
+    box-shadow: 0.5rem 0 0.5rem rgb(180, 174, 174);
+   
+}
+/* .team-founder{
+    position: relative;
+    bottom:0.7rem;
+} */
+#team-founder-text{
+    font-family: var(--style);
+    font-weight: var(--style-bold);
+    font-size: 2rem;
+    display:block;
+}
+#team-member-text{
+    font-family: var(--style);
+    font-weight: var(--style-bold);
+    font-size: 2rem;
+    display:block;
+}
+.founder1 , .founder2 , .founder3{
+
+}
+.member-box{
+width:17rem;
+height:fit-content;
+padding: 1rem;
+box-shadow: 0.5rem 0.5rem 0.5rem rgba(180, 174, 174, 0.87);
+border-radius: 20px;
+justify-content: center;
+align-items: center;
+background-color: rgb(173, 173, 173);
+margin:1rem;
+border-left: 0.3rem black;
+}
+.team-box{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    /* margin:1rem; */
+}
+.Coarse-box{
+    width:17rem;
+    height:fit-content;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(235, 233, 233);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin:1rem;
+    border-left: 0.3rem black;
+}
+.Courses{
+    background-color: grey;
+}
+#course-text{
+    font-family: var(--style);
+    font-weight: var(--style-bold);
+    font-size: 2rem;
+    display:block;
+    color:white;
+}
+#course-head{
+    font-family: var(--style);
+    font-weight: var(--style-bold);
+    font-size: 4rem;
+    color:white;
+}
+.Course-JEE , .Course-NEET , .Course-Board{
+    margin:1rem;
+    box-shadow: 0.5rem 0 0.5rem rgb(235, 230, 230);
+} 
+.footer{
+background-color: black;
+padding: 2rem;
+}
+.footer-container{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+.address{
+color: white;
+line-height: 2rem;
+font-family: var(--style);
+font-weight: 100;
+font-size: 1.5rem;
+}
+.footer-text{
+    color: white;
+    line-height: 2rem;
+    font-family: var(--style);
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+.social-handle i{
+ color: white;
+ display:inline;
+ padding: 1rem;
+ margin:0.5rem;
+}
+.foot{
+    width:15rem;
+    height:fit-content;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5 0.5rem rgb(180, 174, 174);
+    /* justify-content: space-between; */
+    align-items: center;
+    margin:1rem;
+    border-left: 0.3rem black;
+    justify-content: center;
+}
+.footer i{
+    color:whitesmoke;
+    padding: 10px;
+}
+.footer ul{
+    display: inline-flex;
+    flex-direction: column;
+}
+.foot li{
+    margin: 0%;
+    list-style: none;
+}
+/* .foot .social-handle{
+    flex-direction: column;
+} */
+.handle-text{
+    color:#fff;
+    padding: 0.5rem;
+}
